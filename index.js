@@ -1,7 +1,7 @@
 const content = document.querySelector(".content")
 const dice = document.querySelector(".dice")
 const id = document.querySelector(".num")
-let slip_id=117
+let slip_id=1
 
 const getAdvice = (slip_id)=>{
     fetch(`https://api.adviceslip.com/advice/${slip_id}`).then(
