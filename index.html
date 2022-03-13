@@ -3,26 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="index.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Poppins:ital,wght@0,300;1,100&family=Quicksand:wght@300;400&display=swap" rel="stylesheet"> 
   <title>Frontend Mentor | Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+     body{
+        background-color: hsl(218, 23%, 16%);
+      }
+
+      .display{
+        background-color: hsl(217, 19%, 24%);
+        width:90vh;
+       max-width:598;
+        min-height: 200px;
+        margin-top: 112px;
+        font-family: 'Manrope', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 800;
+        border-radius: 4%;
+        position: relative;
+        padding-bottom: 2.5rem;
+      }
+      #heading{
+        color:hsl(150, 100%, 66%);
+        font-size: small;
+        padding-top: 40px;
+
+      }
+      h5{
+        color:rgb(241, 234, 234)
+      }
+
+      .divider{
+          margin-top:20px;
+          width:100%;
+
+        
+          
+      }
+
+      .dice{
+        position: absolute;
+        border-radius: 50%;
+        background-color: hsl(150, 100%, 66%);
+        width:50px;
+        height:50px;
+        left:45.5%;
+        bottom:0;
+        top:93%;
+        cursor: pointer;
+    
+      }
+
+      .dice:hover{
+        box-shadow:0 0 40px hsl(150, 100%, 66%);
+      }
+
+      .content{
+        font-size: 20px;
+        padding-top:20px;
+        align-items: center;
+        justify-content: center;
+        width:500px
+      }
+
+    @media  screen and (max-width:375px){
+      body{
+        background-color: hsl(218, 23%, 16%);
+      }
+
+      
+     
+      
+    }
   </style>
 </head>
 <body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
+  <center>
+  <div class="display">
+      <p id="heading">ADVICE #<span class="num"></span></p>
+      <div class="content_body">
+        <h5 class="content"></h5>
+      </div>
+      <div class="divider">
+        <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/><g transform="translate(212)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
+      </div>
+     
+      <div class="dice">
+        <svg style="padding-top:12px" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
+      </div>
+    
+    </div>
+</center>
+ 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
